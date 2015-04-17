@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_0010" translatesAutoresizingMaskIntoConstraints="NO" id="OIi-5d-wIp">
+                                <rect key="frame" x="300" y="250" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="1t9-3d-V9G"/>
+                                    <constraint firstAttribute="width" constant="100" id="u96-zi-MEh"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SatoshiN21" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fGZ-Pe-YNJ">
+                                <rect key="frame" x="200" y="250" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.35294117650000001" green="0.83137254900000002" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="highlightedColor" red="0.35294117650000001" green="0.83137254900000002" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fGZ-Pe-YNJ" firstAttribute="width" secondItem="OIi-5d-wIp" secondAttribute="width" id="EYm-l1-oCj"/>
+                            <constraint firstAttribute="centerY" secondItem="OIi-5d-wIp" secondAttribute="centerY" id="Jgo-gZ-ZYg"/>
+                            <constraint firstAttribute="centerX" secondItem="fGZ-Pe-YNJ" secondAttribute="centerX" constant="50" id="VSt-fw-w1C"/>
+                            <constraint firstItem="fGZ-Pe-YNJ" firstAttribute="centerY" secondItem="OIi-5d-wIp" secondAttribute="centerY" id="VZI-8V-ukR"/>
+                            <constraint firstAttribute="centerX" secondItem="OIi-5d-wIp" secondAttribute="centerX" constant="-50" id="Xlq-Ej-dO3"/>
+                            <constraint firstItem="fGZ-Pe-YNJ" firstAttribute="height" secondItem="OIi-5d-wIp" secondAttribute="height" id="bVF-eN-brk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="iconImage" destination="OIi-5d-wIp" id="mMu-vN-eB8"/>
+                        <outlet property="indicatorView" destination="fGZ-Pe-YNJ" id="3BI-b0-3GW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IMG_0010" width="500" height="500"/>
+    </resources>
+</document>
